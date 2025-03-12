@@ -108,7 +108,7 @@ class Guess:
                     json_str = response_lines
                     response_dict = json.loads(json_str)
                     res  += response_dict["message"]["content"]
-                    print(response_dict["message"]["content"])
+                    print(response_dict["message"]["content"], end="")
 
                     if response_dict["done"]:
                         
