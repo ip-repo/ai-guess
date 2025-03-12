@@ -31,13 +31,15 @@ def set_model() -> None:
         if line.strip().split(" ")[0] in not_allowed_models:
             
             continue
-        print( line.split(" ")[0])
+        
         allowed_models.append(line.split(" ")[0])
-    print(allowed_models)
+    
 
     d = {}
+    print("Choose model: ")
     for i in range(len(allowed_models)):
         d[i] = allowed_models[i]
+        print(f"{i} : {allowed_models[i]}")
    
     
     if len(argv) == 2:
