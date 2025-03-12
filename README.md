@@ -2,7 +2,7 @@
 A program that use LLM'S in order to guess a path security risk by using local ollama models
 
 ```console
-git clone
+git clone https://github.com/ip-repo/ai-guess.git
 cd ai-guess
 python -m venv ai-guess-venv
 ai-guess\Scripts\activate
