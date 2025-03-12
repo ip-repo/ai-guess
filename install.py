@@ -18,6 +18,7 @@ class Install:
 		self.py_files_path = self.script_path + "\\source\\pyfiles\\"
 		self.source_path = os.path.join(self.script_path, "source")
 		self.program_name = None
+		
 
 
 		print("#" * helpers.get_terminal_width())
