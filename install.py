@@ -277,8 +277,11 @@ if __name__ == "__main__":
 
 	with open(os.path.join(ins.info_folder,"not_allowed.txt"), "w") as file:
 		file.write("\n".join(not_allowed))
-
-	os.system(os.path.join(ins.bin_folder,f"{ins.program_name}-sm.exe") + " NONE")
+		
+	command = os.path.join(ins.bin_folder,f"{ins.program_name}-sm.exe") + " N"
+	os.system(command)
+	
+	print()
 	print("#" * helpers.get_terminal_width())
 	print(f"Info folder located at: {ins.info_folder}")
 	print("#" * helpers.get_terminal_width())
